@@ -14,8 +14,6 @@ function showCurrentTime() {
     minute.textContent = min
     second.textContent = sec
 
-    progress.style.backgroundColor = 'blue'
-    progress.style.height = 5 + 'px'
     progress.style.width = (sec / 60) * 100 + '%'
 }
 
