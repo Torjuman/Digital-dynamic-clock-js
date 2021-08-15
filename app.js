@@ -10,9 +10,9 @@ function showCurrentTime() {
     let min = date.getMinutes()
     let sec = date.getSeconds()
 
-    hour.textContent = hr
-    minute.textContent = min
-    second.textContent = sec
+    hour.textContent = hr < 10 ? (' 0' + hr) : hr
+    minute.textContent = min < 10 ? (' 0' + min) : min
+    second.textContent = sec < 10 ? ( ' 0' + sec) : sec
 
     progress.style.width = (sec / 60) * 100 + '%'
 }
